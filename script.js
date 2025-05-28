@@ -4,6 +4,8 @@ const viewportHeight = window.innerHeight;
 const srcURL = 'https://raw.githubusercontent.com/Indiana-Leiter/GrannyGames/main'
 const gamesManifestURL = `${srcURL}/games.json`;
 
+alert('script is running');
+
 fetch(gamesManifestURL)
 .then(response => {
     if (!response.ok) throw new Error("Failed to fetch games list");
